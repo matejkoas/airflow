@@ -47,8 +47,7 @@ def predict():
         # Выполнение предсказания
         prediction = model.predict(input_data)
 
-        # Пример предсказания: добавление имени файла и предсказанного значения в список
-        #prediction = {'File': file_name, 'Prediction': model.predict(data)}
+        # Добавление в список нового предсказания
         predictions.append(prediction)
 
     # Создание DataFrame из списка предсказаний
